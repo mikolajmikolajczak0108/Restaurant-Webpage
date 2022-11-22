@@ -8,16 +8,43 @@
 </head>
 <body>
 <div class="topnav">
-  <a class="active" href="{% url 'menu:index' %}">Home</a>
-  <a href="{% url 'menu:index' %}">Menu</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">History</a>
+    <a class="active" href="{% url 'menu:index' %}">Home</a>
+    <a href="{% url 'menu:index' %}">Menu</a>
+    <a href="{% url 'contact:index' %}">Contact</a>
+    <a href="#about">History</a>
 </div>
 <div class="main_logo">
-<img src="{% static 'Main/images/main_logo.png' %}"/>
-</div>
-<div class="link">
-    <a class="link_title" href="{% url 'menu:index' %}">See our Menu!</a>
-</div>
+    <img src="{% static 'Main/images/main_logo.png' %}"/>
+    </div>
+	<div class="divider div-transparent div-dot"></div>
+<div class="table">
+    <table class="tg">
+        <thead>
+        <tr>
+            <th class="tg-0pky"><img
+                    src="https://media.fshoq.com/images/323/italian-cuisine-on-wooden-background-323-small.jpg"
+                    alt="Image" width="400" height="300"></th>
+            <th class="tg-0pky"><img src="https://live.staticflickr.com/5310/5625125863_c9c63b823d_b.jpg" width="400"
+                                     height="300"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tg-0pky">We specialise in Italian Cousine for almost 20 years</td>
+            <td class="tg-0pky">Our Michelin-star chef Antonio loves experiments!</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky"><img src="https://live.staticflickr.com/65535/51076894028_a3f59ce351_b.jpg" width="400"
+                                     height="300"></td>
+            <td class="tg-0pky"><img src="https://www.publicdomainpictures.net/pictures/40000/nahled/italian-pizza.jpg"
+                                     width="400" height="300"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">We've got plenty of different pastas for you to taste!</td>
+            <td class="tg-0pky">In Italian Heaven you can eat traditional and experimental pizzas!</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
 </body>
 </html>
